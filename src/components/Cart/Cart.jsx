@@ -155,11 +155,20 @@ export const Cart = () => {
               );
             })}
           </div>
-          <div >
+          <div className={cartStyles.placeOrderButton}>
             <Button sx={{ 
               backgroundColor:"#f14d54", 
               borderRadius:"2px", 
-              color }}
+              color:"white",
+              '&:hover': {
+                backgroundColor: '#FD1823', // Example styling on hover
+                color: 'white', // Example styling on hover
+              },
+              textTransform:"capitalize",
+              fontSize:20,
+              width:"170px",
+              height:"50px"
+              }}
             onClick={placeOrder}>
               Place order
             </Button>
