@@ -8,7 +8,6 @@ const login = async (data) => {
   // const url = `${ENDPOINT}login`;
   return request.post(url, data).then((res) => {
     return res;
-    
   });
 };
 
@@ -19,8 +18,8 @@ const create = async (data) => {
     return res;
   });
 };
- 
-const authService = { 
+
+const authService = {
   login,
   create,
 };
